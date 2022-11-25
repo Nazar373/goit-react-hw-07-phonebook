@@ -23,7 +23,7 @@ const pendingReducer = state => (state.isLoading = true);
 const rejectedReducer = (state, action) => {
   state.isLoading = false;
   state.error = action.payload;
-  console.log(state)
+  console.log('stateOnReject', state)
 };
 
 const fulfilledReducer = state => {
